@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Protest+Riot&display=swap');
+/*Colores
+*/
+
+*
+{
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+font-family: "Oswald", sans-serif;
+}
+
+body
+{
+    background-color: #94A381;
+}
+
+.header
+{
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 5px 1%;
+}
+
+/* LOGO */
+
+.header .logo
+{
+    cursor: pointer;
+}
+
+.header .logo img
+{
+    height: 70px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+.header .logo img:hover
+{
+    transform: scale(1.1);
+}
+
+/* Navegacion */
+
+.links li
+{
+
+    list-style: none;
+
+}
+
+.header .links li
+{
+    display: inline-block;
+    padding: 0 25px;
+}
+
+.header .links li:hover
+{
+    transform: scale(1.2);
+}
+
+.header .links a
+{
+    font-size: 700;
+    color: #000000;
+    text-decoration: none;
+}
+
+.header .links li a:hover
+{
+    color: #94A381;
+}
+
+
+/*Formulario*/
+.formulario
+{
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000000;
+}
+
+form
+{
+    padding: 50px;
+}
+
+.InputGroup
+{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+h2
+{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+label
+{
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+input, textarea
+{
+    font-size: 15px;
+    padding: 17px 25px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 2px solid;
+    outline: none;
+    background-color: #94A381;
+}
+
+.Comments
+{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.btn
+{
+    font-size: 16px;
+    color: #000000;
+    border: 0;
+    border-radius: 25px;
+    background-color: #94A381;
+    cursor: pointer;
+}
+.btn:hover
+{
+    background-color: #94A350;
+}
+
+p{
+    font-size: 1em;
+    line-height: 1.5;
+    color: #000000;
+}
+
+footer {
+    background-color: #FFFFFF;
+    color: #FFFFFF;
+    padding: 20px 0;
+    text-align: center;
+}

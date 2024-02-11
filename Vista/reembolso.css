@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Protest+Riot&display=swap');
+
+*
+{
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+font-family: "Oswald", sans-serif;
+}
+
+body
+{
+    background-color: #94A381;
+}
+
+.header
+{
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 5px 1%;
+}
+
+/* LOGO */
+
+.header .logo
+{
+    cursor: pointer;
+}
+
+.header .logo img
+{
+    height: 70px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+.header .logo img:hover
+{
+    transform: scale(1.1);
+}
+
+/* Navegacion */
+
+.links li
+{
+
+    list-style: none;
+
+}
+
+.header .links li
+{
+    display: inline-block;
+    padding: 0 25px;
+}
+
+.header .links li:hover
+{
+    transform: scale(1.2);
+}
+
+.header .links a
+{
+    font-size: 700;
+    color: #000000;
+    text-decoration: none;
+}
+
+.header .links li a:hover
+{
+    color: #94A381;
+}
+.Contenido
+{
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000000;
+}
+
+
+h2
+{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+h3
+{
+    padding: 20px;
+    font-size: 1.2em;
+    color: #000000;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+p
+{
+    padding: 20px;
+    font-size: 1em;
+    line-height: 1.5;
+    color: #000000;
+}
+
+ul
+{
+    padding: 20px;
+    font-size: 1em;
+    line-height: 1.5;
+    color: #000000;
+}
+
+ol
+{
+    padding: 20px;
+    font-size: 1em;
+    line-height: 1.5;
+    color: #000000;
+}
+
+button
+{
+    padding: 5px;
+    font-size: 20px;
+    color: #000000;
+    border: 0;
+    border-radius: 20px;
+    background-color: #94A381;
+    cursor: pointer;
+}
+
+button:hover
+{
+    background-color: #94A350;
+}
+
+footer {
+    background-color: #FFFFFF;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.UL li
+{
+    background-color: #FFFFFF;
+    color: #fff;
+    padding: 0px 0;
+    text-align: center;
+}

@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Protest+Riot&display=swap');
+
+.header
+{
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 5px 1%;
+}
+
+/* LOGO */
+
+.header .logo
+{
+    cursor: pointer;
+}
+
+.header .logo img
+{
+    height: 70px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+.header .logo img:hover
+{
+    transform: scale(1.1);
+}
+
+/* Navegacion */
+
+.links li
+{
+
+    list-style: none;
+
+}
+
+.header .links li
+{
+    display: inline-block;
+    padding: 0 25px;
+}
+
+.header .links li:hover
+{
+    transform: scale(1.2);
+}
+
+.header .links a
+{
+    font-size: 700;
+    color: #000000;
+    text-decoration: none;
+}
+
+.header .links li a:hover
+{
+    color: #94A381;
+}
+
+body {
+    font-family: "Oswald", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #94A381;
+    color: #000000;
+    line-height: 1.6;
+}
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #000000;
+}
+h1 {
+    text-align: center;
+    color: #000000;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+h2 {
+    font-size: 1.5em;
+    color: #000000;
+    margin-top: 30px;
+    border-bottom: 2px solid #000000;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+h3 {
+    font-size: 1.2em;
+    color: #000000;
+    margin-top: 20px;
+}
+p {
+    font-size: 1em;
+    line-height: 1.5;
+    color: #000000;
+}
+.contact-info {
+    margin-top: 30px;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+}
+.contact-info p {
+    margin: 5px 0;
+}
+
+footer {
+    background-color: #FFFFFF;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
