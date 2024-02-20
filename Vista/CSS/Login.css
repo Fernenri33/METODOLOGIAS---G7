@@ -1,157 +1,122 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Protest+Riot&display=swap');
-/*Colores
-*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
-*
-{
-font-family: "Oswald", sans-serif;
-}
+
 * {
-    margin: 0;
+    font-family: "Nunito", sans-serif;
+}
+
+body {
     padding: 0;
-    box-sizing: border-box;
-}
-
-body
-{
-    background: url('../img/Honda.jpg') no-repeat center center fixed;
-    background-size: cover;
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    min-height: 100vh;
-    margin: 0px;
-}
-
-header
-{
-    padding: 15px;
+    margin: 0;
+    background: linear-gradient(150deg, #ff0534, #c501e2);
+    height: 100vh;
 }
 
 /*Formulario*/
 
-.Principal
-{
-    flex-direction: column;
-    background: #00000080;
-    backdrop-filter: blur(2px);
-    padding: 25px 50px;
-    border-radius: 25px;
-    display: flex;
-    margin-bottom: 30px;
-}
-
-.Contexto h2
-{
-    margin-top: 0px;
-}
-
-.Contexto
-{
+.Contexto {
     display: flex;
     justify-content: center;
-    font-size: 30px;
-    color: #FFFFFF;
-    
-}
 
-.Contenedor1
-{
-    padding: 5px;
-    display: flex;
-    justify-content: center;
-    width: 300px;
-    margin-bottom: 15px;
-    color: #FFFFFF;
-}
+    margin: 0;
+    padding: 0;
 
-.Contenedor2
-{
-    padding: 5px;
-    display: flex;
-    justify-content: center;
-    width: 300px;
-    margin-bottom: 15px;
-    color: #FFFFFF;
-}
-
-.Boton
-{
-    backdrop-filter: blur(2px);
-    text-transform: uppercase;
-    font-size: 20px;
-    cursor: pointer;
-}
-
-input
-{
-    background: #00000080;
-    display: flex;
-    justify-content: center;
-    color: #FFFFFF;
-    padding: 15px;
     width: 100%;
-    border-radius: 25px;
-    border: 0;
-    outline: none;
-    font-size: 15px;
+    color: #000;
 }
 
-input::placeholder
-{
-    font-size: 15px;
-    color: #FFFFFF;
+.Contexto h2 {
+    margin: 5px;
+    padding: 5px;
 }
 
-.Boton:hover
-{
-    background-color: #2c2c2c;
-}
-
-.alerta
-{
+.Principal {
     display: flex;
     justify-content: center;
-    color: red;
-    font-size: 25px;
+    align-items: center;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    box-sizing: border-box;
+    height: 400px;
+    width: 400px;
+    background: #FFFFFF;
+    border-radius: 20px;
+
+    padding: 0;
+    margin: 0;
 }
 
-.Correctamente
-{
+.Boton {
+    width: 300px;
+    height: 40px;
+    margin: 20px 10px 0px 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    background: linear-gradient(150deg, #ff0534, #c501e2);
+    color: #FFFFFF;
+
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.Boton:hover {
+    transform: scale(1.1);
+    background: #000000;
+}
+
+.Contenedor input {
+    text-align: center;
+
+    background: transparent;
+    box-sizing: border-box;
+    width: 300px;
+    height: 40px;
+
+    margin: 10px;
+    padding: 0;
+    outline: none;
+    border: 2px solid;
+    border-radius: 5px;
+    font-size: 20px;
+    color: #000000;
+}
+
+.Contenedor input::placeholder {
+    color: #000000;
+}
+
+.Contenedor2 p {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    margin-top: 20px;
+}
+
+footer {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    bottom: 1px;
+    width: 100%;
+    height: 50px;
+    color: #ffffff;
+}
+
+.alerta {
+    display: flex;
+    justify-content: center;
+    color: #e9032e;
+}
+
+.Correctamente {
     display: flex;
     justify-content: center;
     color: green;
     font-size: 25px;
-}
-
-@media(max-width:800px)
-{
-    body { padding: 10px; }
-
-    form{  padding: 20px;
-            width: 100%;
-        }
-
-    .Contenedor1
-    {
-        position: relative;
-        width: 88%;
-        margin-bottom: 15px;
-    }
-
-    .Contenedor2
-    {
-        position: relative;
-        width: 88%;
-        margin-bottom: 15px;
-    }
-}
-
-footer
-{
-    display: flex;
-    justify-content: flex-end;
-    padding: 5px;
-    color: #FFFFFF;
 }

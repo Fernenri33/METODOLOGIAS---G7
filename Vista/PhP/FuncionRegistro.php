@@ -3,10 +3,21 @@
 
 if (!empty($_POST['registrarse']))
 {
-    if (empty($_POST['nombre']) && empty($_POST['apellido']) &&empty($_POST['email']) 
-    &&empty($_POST['contraseña']))
+    if (empty($_POST['nombre']))
     {
-        echo '<div class="alerta">Campos vacios</div>';
+        echo '<div class="alerta">Campo de Nombre vacio</div>';
+    } 
+    else if(empty($_POST['apellido']))
+    {
+        echo '<div class="alerta">Campo de Apellido vacio</div>';
+    } 
+    else if(empty($_POST['email']))
+    {
+        echo '<div class="alerta">Campo de Email vacio</div>';
+    } 
+    else if(empty($_POST['contraseña']))
+    {
+        echo '<div class="alerta">Campo de Contraseña vacio</div>';
     }
     else
     {
@@ -26,13 +37,8 @@ if (!empty($_POST['registrarse']))
         {
         $sql=$conex->query("INSERT INTO registro(nombre, apellido, email, contraseña)
         VALUES ('$nombre','$apellido','$email','$contraseña')");
-
-        echo '<div class="Correctamente">Usuario registrado correctamente</div>';
-        header("location:Login.php");
         exit;
         }
-
     }
 }
-
 ?>
