@@ -5,9 +5,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST["email"];
     $contraseña = $_POST["contraseña"];
 
-    if(empty($_POST['email']) && empty($_POST['contraseña']))
+    if(empty($_POST['email'])) 
     {
-        echo '<div class="alerta">Campos vacios</div>';
+        echo '<div class="alerta">Campo de Email vacio</div>';
+    }
+    else if(empty($_POST['contraseña']))
+    {
+        echo '<div class="alerta">Campos de Contraseña vacio</div>';
     }
     else
     {
