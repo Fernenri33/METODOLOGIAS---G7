@@ -3,12 +3,14 @@
 
 * {
     font-family: "Nunito", sans-serif;
+
+    outline: none;
 }
 
 
 body {
-    background: linear-gradient(150deg, #000117, #491d88);
-    height: 100vh;
+    background: linear-gradient(180deg, #ff0534, #fff);
+    height: auto;
     padding: 0;
     margin: 0;
 }
@@ -20,7 +22,7 @@ body {
 }
 
 .CarWap h1 {
-    padding: 0 10px 0 10px;
+    padding: 0 50px 0 10px;
     margin: 0;
     font-size: 20px;
     color: #FFFFFF;
@@ -78,3 +80,223 @@ body {
 /*Informacion Usuario*/
 
 /*Contenido principal de la pagina*/
+
+/*Slider*/
+
+.slider-Container
+{
+    display: flex;
+    margin: 15px auto;
+
+    width: 90%;
+    height: 500px;
+
+    overflow: hidden;
+
+    transition: left ;
+}
+
+.slider-item
+{
+    display: flex;
+
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+}
+
+.slider-item .Imagen
+{
+    width: 300vh;
+    object-fit: cover;
+
+
+}
+
+.slider-text
+{
+    position: absolute;
+}
+
+/*Linea horizontal*/
+hr
+{
+    width: 90%;
+    height: 5px;
+
+    background: #000;
+
+    border: 0 solid;
+
+    margin: 1px auto;
+}
+
+/*Cuadro Productos*/
+.CuadroProduct
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    width: 90%;
+
+    margin: 10px auto;
+
+    overflow: auto;
+}
+
+.Cuadro
+{
+    width: 375px;
+    height: 400px;
+
+    margin: 0 auto;
+
+    background: #000;
+
+    border-radius: 15px;
+
+    overflow: fixed;
+}
+
+.Cuadro .CuadroImagen
+{
+    display: block;
+
+    width: 90%;
+    height: 70%;
+
+    aspect-ratio: 16/9;
+
+    border-radius: 15px;
+
+    margin: 15px auto;
+}
+
+.Cuadro .CuadroTexto
+{
+    color: #fff;
+}
+
+/*Contenido*/
+.Tema-Productos
+{
+    border-radius: 15px;
+
+    width: 90%;
+
+    margin: 0 auto;
+}
+
+.Tema-Productos h1
+{
+    margin: 5px;
+}
+
+.Tema-Productos1
+{
+    border-radius: 15px;
+
+    width: 90%;
+
+    margin: 0 auto;
+}
+
+.Tema-Productos h1
+{
+    margin: 5px;
+}
+
+/*Productos*/
+.Productos
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+
+    width: 90%;
+
+    margin: 10px auto;
+
+}
+
+.Productos .Product-Item
+{
+    width: 350px;
+    height: 250px;
+    
+    margin: 15px auto;
+
+    background: #000;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    transition: all 0.5s;
+}
+
+.Product-Item .Product-IMG
+{
+    display: flex;
+    width: 90%;
+
+    border-radius: 5px;
+
+    margin: 10px auto;
+}
+
+.Product-Item .Descripcion
+{
+    color: #FFFFFF;
+
+    padding: 5px;
+}
+
+.Productos .Product-Item:hover
+{
+    transform: scale(1.1);
+}
+
+/*Productos extra*/
+#Product-JS
+{
+    display: none;
+}
+
+.Productos .Product-ItemExtra
+{
+    width: 350px;
+    height: 250px;
+    
+    margin: 15px auto;
+
+    background: #000;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    transition: all 0.5s;
+}
+
+.Product-ItemExtra .Product-IMG
+{
+    display: flex;
+    width: 90%;
+
+    border-radius: 5px;
+
+    margin: 10px auto;
+}
+
+.Product-ItemExtra .Descripcion
+{
+    color: #FFFFFF;
+
+    padding: 5px;
+}
+
+.Productos .Product-ItemExtra:hover
+{
+    transform: scale(1.1);
+}
