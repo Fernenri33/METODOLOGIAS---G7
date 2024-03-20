@@ -9,7 +9,7 @@
 
 
 body {
-    background: linear-gradient(180deg, #ff0534, #fff);
+    background: #B8BCB9;
     height: auto;
     padding: 0;
     margin: 0;
@@ -32,9 +32,8 @@ body {
 .header {
     display: flex;
     justify-content: center;
-    align-items: center;
 
-    background-color: #491d88;
+    background-color: #6f7357;
 
     height: 80px;
 
@@ -51,30 +50,80 @@ body {
 }
 
 .nav {
-    font-size: 20px;
+    display: flex;
+    justify-content: flex-start;
 
-    display: inline-block;
+    width: 100%;
+    height: 80px;
 
-    list-style: none;
     margin: 0;
-    margin: 0;
+    padding: 0;
 
-    cursor: pointer;
+    overflow: hidden;
 }
 
-.nav a {
-    color: #FFFFFF;
-    border-radius: 10px;
+.nav .a
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100px;
+    height: 100%;
+
+    border: 0 solid;
+
+    outline: none;
+
     text-decoration: none;
 
-    transition: all 0.8s;
+    margin: 0 5px 0 0;
+    padding: auto;
 
-    margin: 0px 10px;
-    padding: 0px 10px;
+    color: #FFFFFF;
+
+    font-size: 17px;
+
+    transition: all 0.3s;
 }
 
-.nav a:hover {
+.Usuario-Container
+{
+    margin: 0;
+    padding: 0;
+
+    overflow: hidden;
+}
+
+.Usuario-Container .a
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100px;
+    height: 100%;
+
+    border: 0 solid;
+
+    outline: none;
+
+    text-decoration: none;
+
+    margin: 0 5px 0 0;
+    padding: auto;
+
+    color: #FFFFFF;
+
+    font-size: 17px;
+
+    transition: all 0.3s;   
+}
+
+.a:hover {
     background: #000000;
+
+    transform: scale(1.1);
 }
 
 /*Informacion Usuario*/
@@ -88,10 +137,12 @@ body {
     display: flex;
     margin: 15px auto;
 
-    width: 90%;
+    width: 95%;
     height: 500px;
 
     overflow: hidden;
+
+    border-radius: 15px;
 
     transition: left ;
 }
@@ -110,17 +161,22 @@ body {
 {
     width: 300vh;
     object-fit: cover;
-
-
 }
 
 .slider-text
 {
     position: absolute;
+
+    margin: 10px;
+
+    bottom: 10px;
+
+    color: #fff;
 }
 
 /*Linea horizontal*/
 hr
+
 {
     width: 90%;
     height: 5px;
@@ -140,9 +196,7 @@ hr
 
     width: 90%;
 
-    margin: 10px auto;
-
-    overflow: auto;
+    margin: 15px auto 30px;
 }
 
 .Cuadro
@@ -152,11 +206,20 @@ hr
 
     margin: 0 auto;
 
-    background: #000;
+    background: #666;
 
     border-radius: 15px;
 
     overflow: fixed;
+
+    cursor: pointer;
+
+    transition: all 0.5s;
+}
+
+.Cuadro:hover
+{
+    transform: scale(1.05);
 }
 
 .Cuadro .CuadroImagen
@@ -166,21 +229,34 @@ hr
     width: 90%;
     height: 70%;
 
+    object-fit: cover;
     aspect-ratio: 16/9;
 
     border-radius: 15px;
 
-    margin: 15px auto;
+    margin: 15px auto 10px;
 }
 
 .Cuadro .CuadroTexto
 {
     color: #fff;
+
+    padding: 10px;
+
+    display: flex;
+    justify-content: center;
+
+    margin: 0;
 }
+
+
 
 /*Contenido*/
-.Tema-Productos
+.Contenido-Productos
 {
+    display: flex;
+
+    justify-content: space-between;
     border-radius: 15px;
 
     width: 90%;
@@ -188,24 +264,44 @@ hr
     margin: 0 auto;
 }
 
-.Tema-Productos h1
+.Contenido-Productos h1
 {
-    margin: 5px;
+    display: flex;
+    justify-content: center;
+
+    margin: 10px 0 0 0;
 }
 
-.Tema-Productos1
+.Contenido-Btn
 {
-    border-radius: 15px;
+    display: flex;
+    align-items: center;
 
-    width: 90%;
-
-    margin: 0 auto;
+    margin: 5px 0;
 }
 
-.Tema-Productos h1
+.Contenido-Btn .Btn
 {
-    margin: 5px;
+    width: 100px;
+    height: 80%;
+
+    box-sizing: border-box;
+    border: 0 solid;
+
+    background: #4fa8fb;
+
+    cursor: pointer;
+
+    transition: all 0.3s;
+
+    border-radius: 10px;
 }
+
+.Btn:hover
+{
+    transform: scale(1.1);
+}
+
 
 /*Productos*/
 .Productos
@@ -216,7 +312,6 @@ hr
     width: 90%;
 
     margin: 10px auto;
-
 }
 
 .Productos .Product-Item
@@ -226,7 +321,7 @@ hr
     
     margin: 15px auto;
 
-    background: #000;
+    background: #666666;
 
     border-radius: 5px;
 
@@ -248,8 +343,9 @@ hr
 .Product-Item .Descripcion
 {
     color: #FFFFFF;
+    font-size: 25px;
 
-    padding: 5px;
+    margin: 0 10px;
 }
 
 .Productos .Product-Item:hover
@@ -260,17 +356,26 @@ hr
 /*Productos extra*/
 #Product-JS
 {
-    display: none;
 }
 
-.Productos .Product-ItemExtra
+.Product-JS
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+
+    width: 90%;
+
+    margin: 10px auto;
+}
+
+.Product-JS .Product-ItemExtra
 {
     width: 350px;
     height: 250px;
     
     margin: 15px auto;
 
-    background: #000;
+    background: #666666;
 
     border-radius: 5px;
 
@@ -292,11 +397,65 @@ hr
 .Product-ItemExtra .Descripcion
 {
     color: #FFFFFF;
+    font-size: 25px;
 
-    padding: 5px;
+    margin: 0 10px;
 }
 
-.Productos .Product-ItemExtra:hover
+.Product-JS .Product-ItemExtra:hover
 {
     transform: scale(1.1);
+}
+
+.footer
+{
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+
+    margin: 0 auto;
+
+    background: #6f7357;
+
+    overflow: hidden;
+}
+
+.DerechosDeAutor
+{
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+
+    color: #FFFFFF;
+}
+
+.UL
+{
+    list-style: none;
+
+    margin: 0 auto;
+    padding: 0;
+}
+
+.UL li
+{
+    display: flex;
+    align-items: center;
+    height: 30px;
+    cursor: pointer;
+
+    margin: 5px 0;
+}
+
+.UL a
+{ 
+    color: #FFFFFF; 
+   text-decoration: none;
+}
+
+.UL a:hover
+{
+    color: #759eff;
 }

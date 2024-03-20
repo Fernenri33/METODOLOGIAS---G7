@@ -10,82 +10,80 @@
 
 <body>
     <!--Header 1-->
-    <div class="CarWap">
+    <section class="CarWap">
         <h1>CARWAP</h1>
-    </div>
+    </section>
 
     <!--Header 2-->
     <header class="header">
 
-        <div class="espacio-extra"></div>
-
-        <div class="nav">
-            <nav>
-                <a href="Homepage.html">Inicio</a>
-                <a href="Comprar">Comprar</a>
-                <a href="../HTML/formulario.html">Vender</a>
-                <a href="Conócenos">Conócenos</a>
-                <a href="">Usuario</a>
+            <nav class="nav">
+                <a class="a" href="Homepage.html">Inicio</a>
+                <a class="a" href="Mercado.html">Mercado</a>
+                <a class="a" href="../PhP/formulario.html">Vender</a>
+                <a class="a" href="Conócenos">Conócenos</a>
             </nav>
-        </div>
 
-        <div class="espacio-extra"></div>
+            <div class="Usuario-Container">
+                <a class="a" href="">Usuario</a>
+            </div>
+        
     </header>
 
     <!--Contenido Principal-->
     <main class="main">
 
         <!--Destacados-->
-        <div class="slider-Container">
+        <section class="slider-Container">
 
-            <div class="slider-item">
+            <section class="slider-item">
 
                 <img class="Imagen" src="../img/toyotaHilux.jpg" alt="">
 
-                <div class="slider-text">
+                <section class="slider-text">
+
+                    <h2 class="Destacado">Contenido Destacado</h2>
+
+                    <p class="Informacion">Informacion</p>
+
+                </section>
+
+            </section>
+
+            <section class="slider-item">
+
+                <img class="Imagen" src="../img/hondaCivic.jpg" alt="">
+
+                <section class="slider-text">
 
                     <h2 class="Destacado">Destacado</h2>
 
                     <p class="Informacion">Informacion</p>
 
-                </div>
-
-            </div>
-
-            <div class="slider-item">
-
-                <img class="Imagen" src="../img/toyotaHilux.jpg" alt="">
-
-                <div class="slider-text">
-
-                    <h2 class="Destacado">Destacado</h2>
-
-                    <p class="Informacion">Informacion</p>
-
-                </div>
+                </section>
                 
-            </div>
+            </section>
 
-            <div class="slider-item">
+            <section class="slider-item">
 
                 <img class="Imagen" src="../img/toyotaHilux.jpg" alt="">
 
-                <div class="slider-text">
+                <section class="slider-text">
 
                     <h2 class="Destacado">Destacado</h2>
 
                     <p class="Informacion">Informacion</p>
 
-                </div>
+                </section>
                 
-            </div>
+            </section>
 
-        </div>
+        </section>
 
         <hr>
 
-        <div class="Tema-Productos1">
-            <h1>Marcas que prodrian interesarte</h1>
+        <div class="Contenido-Productos">
+            <h1>Marcas que podrian interesarte</h1>
         </div>
 
                 <!--SECCIONES CUADRO GRANDE-->
@@ -93,28 +91,28 @@
                 <section class="CuadroProduct">
 
                     <article class="Cuadro">
-                        <img class="CuadroImagen" src="../img/nissanZ.jpg" alt="">
+                        <img class="CuadroImagen" src="../img/Toyota.webp" alt="">
         
                         <div class="CuadroTexto">
-                            <h2>Titulo</h2>
+                            <h2>TOYOTA</h2>
                         </div>
         
                     </article>
         
                     <article class="Cuadro">
-                        <img class="CuadroImagen" src="../img/nissanZ.jpg" alt="">
+                        <img class="CuadroImagen" src="../img/NISSAN.jpg" alt="">
         
                         <div class="CuadroTexto">
-                            <h2>Titulo</h2>
+                            <h2>NISSAN</h2>
                         </div>
         
                     </article>
         
                     <article class="Cuadro">
-                        <img class="CuadroImagen" src="../img/nissanZ.jpg" alt="">
+                        <img class="CuadroImagen" src="../img/KIA.jpg" alt="">
         
                         <div class="CuadroTexto">
-                            <h2>Titulo</h2>
+                            <h2>KIA</h2>
                         </div>
         
                     </article>
@@ -123,8 +121,12 @@
 
         <hr>
 
-        <div class="Tema-Productos">
-            <h1>Productos</h1>
+        <div class="Contenido-Productos">
+            <h1>Automóviles</h1>
+
+            <div class="Contenido-Btn">
+                <button class="Btn" onclick="VerMas()">Ver mas.</button>
+            </div>
         </div>
 
         <!--Productos-->
@@ -134,7 +136,7 @@
 
                 <img class="Product-IMG" src="../img/nissanGTR.jpg" alt="">
 
-                <div class="Descripcion">Titulo del producto para mayor informacion</div>
+                <div class="Descripcion">Titulo</div>
 
             </article>
 
@@ -142,7 +144,7 @@
 
                 <img class="Product-IMG" src="../img/nissanGTR.jpg" alt="">
 
-                <div class="Descripcion">Texto</div>
+                <div class="Descripcion">Titulo</div>
 
             </article>
 
@@ -150,7 +152,7 @@
 
                 <img class="Product-IMG" src="../img/nissanGTR.jpg" alt="">
 
-                <div class="Descripcion">Texto</div>
+                <div class="Descripcion">Titulo</div>
 
             </article>
 
@@ -158,7 +160,7 @@
 
                 <img class="Product-IMG" src="../img/nissanGTR.jpg" alt="">
 
-                <div class="Descripcion">Texto</div>
+                <div class="Descripcion">Titulo</div>
 
             </article>
 
@@ -166,7 +168,7 @@
 
                 <img class="Product-IMG" src="../img/nissanGTR.jpg" alt="">
 
-                <div class="Descripcion">Texto</div>
+                <div class="Descripcion">Titulo</div>
 
             </article>
 
@@ -174,58 +176,61 @@
 
                 <img class="Product-IMG" src="../img/nissanGTR.jpg" alt="">
 
-                <div class="Descripcion">Texto</div>
+                <div class="Descripcion">Titulo</div>
 
             </article>
+
+        </section>
 
             <!--Productos extra-->
+        <section id="Product-JS" class="Product-JS">
 
-            <article id="Product-JS" class="Product-ItemExtra">
+            <article class="Product-ItemExtra">
 
                 <img class="Product-IMG" src="../img/nissanGTR.jpg" alt="">
 
-                <div class="Descripcion">Texto</div>
+                <div class="Descripcion">Titulo</div>
 
             </article>
 
-            <article id="Product-JS" class="Product-ItemExtra">
+            <article class="Product-ItemExtra">
 
-                <img class="Product-IMG" src="../img/nissanGTR.jpg" alt="">
+                <img class="Product-IMG" src="../img/nissanGTR.jpg  " alt="">
 
-                <div class="Descripcion">Texto</div>
-
-            </article>
-
-            <article id="Product-JS" class="Product-ItemExtra">
-
-                <img class="Product-IMG" src="../img/nissanGTR.jpg" alt="">
-
-                <div class="Descripcion">Texto</div>
+                <div class="Descripcion">Titulo</div>
 
             </article>
 
-
-            <article id="Product-JS" class="Product-ItemExtra">
+            <article class="Product-ItemExtra">
 
                 <img class="Product-IMG" src="../img/nissanGTR.jpg" alt="">
 
-                <div class="Descripcion">Texto</div>
+                <div class="Descripcion">Titulo</div>
 
             </article>
 
-            <article id="Product-JS" class="Product-ItemExtra">
+
+            <article class="Product-ItemExtra">
 
                 <img class="Product-IMG" src="../img/nissanGTR.jpg" alt="">
 
-                <div class="Descripcion">Texto</div>
+                <div class="Descripcion">Titulo</div>
 
             </article>
 
-            <article id="Product-JS" class="Product-ItemExtra">
+            <article class="Product-ItemExtra">
 
                 <img class="Product-IMG" src="../img/nissanGTR.jpg" alt="">
 
-                <div class="Descripcion">Titulo del producto para mayor informacion</div>
+                <div class="Descripcion">Titulo</div>
+
+            </article>
+
+            <article class="Product-ItemExtra">
+
+                <img class="Product-IMG" src="../img/nissanGTR.jpg" alt="">
+
+                <div class="Descripcion">Titulo</div>
 
             </article>
 
@@ -234,9 +239,15 @@
 
 
         <!--Final de pagina-->
-        <footer>
-
+        <footer class="footer">
+            <p class="DerechosDeAutor">Copyright © 2024 Empresa de Venta de Vehículos</p>
+            <ul class="UL">
+                <li><a href="reembolso.html">Política de reembolso</a></li>
+                <li><a href="Politicas y privacidad.html">Política de privacidad</a></li>
+              </ul>
         </footer>
+
+        <script src="../JS/Homepage.js"></script>
 
 </body>
 
