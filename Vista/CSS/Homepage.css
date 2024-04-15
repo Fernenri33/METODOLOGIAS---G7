@@ -62,8 +62,7 @@ body {
     overflow: hidden;
 }
 
-.nav .a
-{
+.nav .a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -87,16 +86,14 @@ body {
     transition: all 0.3s;
 }
 
-.Usuario-Container
-{
+.Usuario-Container {
     margin: 0;
     padding: 0;
 
     overflow: hidden;
 }
 
-.Usuario-Container .a
-{
+.Usuario-Container .a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -117,7 +114,7 @@ body {
 
     font-size: 17px;
 
-    transition: all 0.3s;   
+    transition: all 0.3s;
 }
 
 .a:hover {
@@ -132,8 +129,7 @@ body {
 
 /*Slider*/
 
-.slider-Container
-{
+.slider-Container {
     display: flex;
     margin: 15px auto;
 
@@ -144,11 +140,10 @@ body {
 
     border-radius: 15px;
 
-    transition: left ;
+    transition: left;
 }
 
-.slider-item
-{
+.slider-item {
     display: flex;
 
     width: 100%;
@@ -157,14 +152,12 @@ body {
     position: relative;
 }
 
-.slider-item .Imagen
-{
+.slider-item .Imagen {
     width: 300vh;
     object-fit: cover;
 }
 
-.slider-text
-{
+.slider-text {
     position: absolute;
 
     margin: 10px;
@@ -175,9 +168,7 @@ body {
 }
 
 /*Linea horizontal*/
-hr
-
-{
+hr {
     width: 90%;
     height: 5px;
 
@@ -189,8 +180,7 @@ hr
 }
 
 /*Cuadro Productos*/
-.CuadroProduct
-{
+.CuadroProduct {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 
@@ -199,8 +189,7 @@ hr
     margin: 15px auto 30px;
 }
 
-.Cuadro
-{
+.Cuadro {
     width: 375px;
     height: 400px;
 
@@ -217,13 +206,11 @@ hr
     transition: all 0.5s;
 }
 
-.Cuadro:hover
-{
+.Cuadro:hover {
     transform: scale(1.05);
 }
 
-.Cuadro .CuadroImagen
-{
+.Cuadro .CuadroImagen {
     display: block;
 
     width: 90%;
@@ -237,8 +224,7 @@ hr
     margin: 15px auto 10px;
 }
 
-.Cuadro .CuadroTexto
-{
+.Cuadro .CuadroTexto {
     color: #fff;
 
     padding: 10px;
@@ -252,8 +238,7 @@ hr
 
 
 /*Contenido*/
-.Contenido-Productos
-{
+.Contenido-Productos {
     display: flex;
 
     justify-content: space-between;
@@ -264,24 +249,21 @@ hr
     margin: 0 auto;
 }
 
-.Contenido-Productos h1
-{
+.Contenido-Productos h1 {
     display: flex;
     justify-content: center;
 
     margin: 10px 0 0 0;
 }
 
-.Contenido-Btn
-{
+.Contenido-Btn {
     display: flex;
     align-items: center;
 
     margin: 5px 0;
 }
 
-.Contenido-Btn .Btn
-{
+.Contenido-Btn .Btn {
     width: 100px;
     height: 80%;
 
@@ -297,28 +279,25 @@ hr
     border-radius: 10px;
 }
 
-.Btn:hover
-{
+.Btn:hover {
     transform: scale(1.1);
 }
 
 
 /*Productos*/
-.Productos
-{
+.Productos {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr;
 
     width: 90%;
 
     margin: 10px auto;
 }
 
-.Productos .Product-Item
-{
+.Productos .Product-Item {
     width: 350px;
     height: 250px;
-    
+
     margin: 15px auto;
 
     background: #666666;
@@ -330,8 +309,7 @@ hr
     transition: all 0.5s;
 }
 
-.Product-Item .Product-IMG
-{
+.Product-Item .Product-IMG {
     display: flex;
     width: 90%;
 
@@ -340,39 +318,32 @@ hr
     margin: 10px auto;
 }
 
-.Product-Item .Descripcion
-{
+.Product-Item .Descripcion {
     color: #FFFFFF;
     font-size: 25px;
 
     margin: 0 10px;
 }
 
-.Productos .Product-Item:hover
-{
+.Productos .Product-Item:hover {
     transform: scale(1.1);
 }
 
 /*Productos extra*/
-#Product-JS
-{
-}
 
-.Product-JS
-{
+.Product-JS {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr;
 
     width: 90%;
 
     margin: 10px auto;
 }
 
-.Product-JS .Product-ItemExtra
-{
+.Product-JS .Product-ItemExtra {
     width: 350px;
     height: 250px;
-    
+
     margin: 15px auto;
 
     background: #666666;
@@ -384,8 +355,7 @@ hr
     transition: all 0.5s;
 }
 
-.Product-ItemExtra .Product-IMG
-{
+.Product-ItemExtra .Product-IMG {
     display: flex;
     width: 90%;
 
@@ -394,21 +364,18 @@ hr
     margin: 10px auto;
 }
 
-.Product-ItemExtra .Descripcion
-{
+.Product-ItemExtra .Descripcion {
     color: #FFFFFF;
     font-size: 25px;
 
     margin: 0 10px;
 }
 
-.Product-JS .Product-ItemExtra:hover
-{
+.Product-JS .Product-ItemExtra:hover {
     transform: scale(1.1);
 }
 
-.footer
-{
+.footer {
     width: 100%;
     height: auto;
 
@@ -422,8 +389,7 @@ hr
     overflow: hidden;
 }
 
-.DerechosDeAutor
-{
+.DerechosDeAutor {
     margin: 10px 0;
     display: flex;
     justify-content: center;
@@ -431,16 +397,14 @@ hr
     color: #FFFFFF;
 }
 
-.UL
-{
+.UL {
     list-style: none;
 
     margin: 0 auto;
     padding: 0;
 }
 
-.UL li
-{
+.UL li {
     display: flex;
     align-items: center;
     height: 30px;
@@ -449,13 +413,11 @@ hr
     margin: 5px 0;
 }
 
-.UL a
-{ 
-    color: #FFFFFF; 
-   text-decoration: none;
+.UL a {
+    color: #FFFFFF;
+    text-decoration: none;
 }
 
-.UL a:hover
-{
+.UL a:hover {
     color: #759eff;
 }

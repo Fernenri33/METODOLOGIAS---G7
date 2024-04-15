@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="../css/Login.css">
+    <link rel="stylesheet" href="http://localhost/METODOLOGIAS---G7/Vista/CSS/Login.css">
 </head>
-<body>
-    
 
-<header class="header">
-</header>
+<body>
+
+
+    <header class="header">
+    </header>
 
     <main class="Principal">
 
         <form method="post" autocomplete="off">
 
-        <div class="Contexto"> <h2>Iniciar Sesión</h2> </div>
+            <div class="Contexto">
+                <h2>Iniciar Sesión</h2>
+            </div>
 
-        <?php
-        include("FuncionLogin.php");
-        ?>
+            <?php
+            include("FuncionLogin.php");
+            ?>
 
             <div class="Contenedor">
                 <input type="email" name="email" placeholder="Email">
@@ -39,11 +43,12 @@
 
     </main>
 
-    
+
     <footer>
         <p>Copyright © 2024 CarWap</p>
     </footer>
 
 
 </body>
+
 </html>

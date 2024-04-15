@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro</title>
-    <link rel="stylesheet" href="../CSS/Index.css">
+    <link rel="stylesheet" href="http://localhost/METODOLOGIAS---G7/Vista/CSS/Index.css">
 </head>
 
 <body>
@@ -22,7 +22,7 @@
             </div>
 
             <?php
-                include("FuncionRegistro.php");
+            include("FuncionRegistro.php");
             ?>
 
             <div class="Contenedor">

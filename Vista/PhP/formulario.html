@@ -1,143 +1,153 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario de venta- Autos Usados</title>
-    <link rel="stylesheet" href="../CSS/formulario.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de venta- Autos Usados</title>
+  <link rel="stylesheet" href="http://localhost/METODOLOGIAS---G7/Vista/CSS/formulario.css">
 </head>
 
 <body>
 
-    <!--Header 1-->
-    <section class="CarWap">
-      <h1>CARWAP</h1>
+  <!--Header 1-->
+  <section class="CarWap">
+    <h1>CARWAP</h1>
+  </section>
+
+  <!--Header 2-->
+  <header class="header">
+
+    <nav class="nav">
+      <a class="a" href="Homepage.html">Inicio</a>
+      <a class="a" href="Mercado.html">Mercado</a>
+      <a class="a" href="../PhP/formulario.html">Vender</a>
+      <a class="a" href="Conócenos">Conócenos</a>
+    </nav>
+
+    <section class="Usuario-Container">
+      <a class="a" href="">Usuario</a>
     </section>
 
-    <!--Header 2-->
-    <header class="header">
+  </header>
 
-        <nav class="nav">
-          <a class="a" href="Homepage.html">Inicio</a>
-          <a class="a" href="Mercado.html">Mercado</a>
-          <a class="a" href="../PhP/formulario.html">Vender</a>
-          <a class="a" href="Conócenos">Conócenos</a>
-        </nav>
+  <main>
 
-          <section class="Usuario-Container">
-              <a class="a" href="">Usuario</a>
-          </section>
-        
-    </header>
+    <section id="FormularioContenedor" class="Clase-FormularioContenedor">
 
-      <main>
+      <h2 class="contexto">Vender vehiculo</h2>
 
-        <section id="FormularioContenedor" class="Clase-FormularioContenedor">
+      <form id="Formulario" class="Clase-Formulario" onsubmit="event.preventDefault(); alert('Formulario enviado!');">
 
-          <h2 class="contexto">Formulario de Venta del Vehiculo</h2>
+        <section class="InputGroup">
 
-          <form id="Formulario" class="Clase-Formulario" onsubmit="event.preventDefault(); alert('Formulario enviado!');">
+          <section class="Group-1">
 
-            <section class="InputGroup">
-
-              <section class="Group-1">
-
-                <section class="SubGroup-1">
-                  <label class="label" for="fname">Nombre</label>
-                  <input class="input" type="text" id="fname" name="fname" required>  
-                </section>
-
-                <section class="SubGroup-2">
-                  <label class="label" for="lname">Apellido</label>
-                  <input class="input" type="text" id="lname" name="lname" required>
-                </section>
-
-              </section>
-
-              <br><!-- Quita después si quieres, solo lo puse para que se vea más ordenado... -->
-
-              <div class="Despegable">
-                <label for="carBrand">Marca de vehículo:</label>
-                <select id="carBrand" name="carBrand" required>
-                  <option value="Toyota">Toyota</option>
-                  <option value="Honda">Honda</option>
-                  <option value="Ford">Ford</option>
-                  <option value="Mazda">Mazda</option>
-                  <option value="other">Otro</option>
-                </select>
-              </div>
-              <br><!-- Quita después si quieres, solo lo puse para que se vea más ordenado... -->
-              
-                <label>Estado del vehículo:</label>
-              <div class="RadioB1">
-                <input type="radio" id="good" name="carCondition" value="good" required>
-                <label for="good">Bueno</label>
-                <input type="radio" id="average" name="carCondition" value="average">
-                <label for="average">Regular</label>
-                <input type="radio" id="bad" name="carCondition" value="bad">
-                <label for="bad">Malo</label>
-              </div>
-
-              <br><!-- Quita después si quieres, solo lo puse para que se vea más ordenado... -->
-
-                <label for="mileage">Kilometraje:</label>
-                <input type="number" id="mileage" name="mileage" required>
-
-              <br><!-- Quita después si quieres, solo lo puse para que se vea más ordenado... -->
-              
-                <label for="year">Año:</label>
-                <input type="number" id="year" name="year" min="1886" max="2099" required>
-
-              <br><!-- Quita después si quieres, solo lo puse para que se vea más ordenado... -->
-              
-                <label for="color">Color:</label>
-                <input type="text" id="color" name="color" required>
-
-              <br><!-- Quita después si quieres, solo lo puse para que se vea más ordenado... -->
-              
-                <label for="price">Precio:</label>
-                <input type="number" id="price" name="price" step="0.01" min="0" required>
-
-              <br><!-- Quita después si quieres, solo lo puse para que se vea más ordenado... -->
-              
-                <label for="licensePlate">Matrícula:</label>
-                <input type="text" id="licensePlate" name="licensePlate" required>
-
-              <br><!-- Quita después si quieres, solo lo puse para que se vea más ordenado... -->
-
-              <div class="RadioBtn">
-                <label>¿Tiene seguro?</label>
-                <input type="radio" id="yes" name="insurance" value="yes" required>
-                <label for="yes">Sí</label>
-                <input type="radio" id="no" name="insurance" value="no">
-                <label for="no">No</label>
-              </div>
-
-              <br><!-- Quita después si quieres, solo lo puse para que se vea más ordenado... -->
-
-              <div class="Comments">
-                <label for="comments">Comentarios:</label><br><!-- Quita después si quieres, solo lo puse para que se vea más ordenado... -->
-                <textarea id="comments" name="comments" rows="4" cols="50" required></textarea>
-              </div>
-
-              <br><!-- Quita después si quieres, solo lo puse para que se vea más ordenado... -->
-
-                <label for="carImages">Subir imágenes del auto:</label>
-                <input type="file" id="carImages" name="carImages" accept="image/*" multiple required>
-
-              <br><!-- Quita después si quieres, solo lo puse para que se vea más ordenado... -->
-
-                <input class="btn" type="submit" value="Enviar">
+            <section class="SubGroup">
+              <label class="label" for="fname">Nombre</label>
+              <input class="input" type="text" id="fname" name="fname" required>
             </section>
-            </form>
-      </main>
-         
-      <footer class="footer">
-        <p class="DerechosDeAutor">Copyright © 2024 Empresa de Venta de Vehículos</p>
-        <ul class="UL">
-          <li><a href="reembolso.html">Política de reembolso</a></li>
-          <li><a href="Politicas y privacidad.html">Política de privacidad</a></li>
-        </ul>
-      </footer>           
+
+            <section class="SubGroup">
+              <label class="label" for="lname">Apellido</label>
+              <input class="input" type="text" id="lname" name="lname" required>
+            </section>
+
+          </section>
+
+          <section class="Despegable">
+            <label for="carBrand" class="labelMV">Marca de vehículo</label>
+            <select id="carBrand" name="carBrand" required class="selectMV">
+              <option value="Toyota">Toyota</option>
+              <option value="Honda">Nissan</option>
+              <option value="Ford">Kia</option>
+              <option value="Mazda">Mazda</option>
+              <option value="other">Hyundai</option>
+            </select>
+          </section>
+
+          <section class="sectionEdV">
+            <label class="labelEdV">Estado del vehículo</label>
+
+            <section class="RadioOpciones">
+              <input type="radio" id="good" name="carCondition" value="good" required class="inputEdV">
+              <label for="good" class="labelRadioEdV">Bueno</label>
+              <input type="radio" id="average" name="carCondition" value="average" class="inputEdV">
+              <label for="average" class="labelRadioEdV">Regular</label>
+              <input type="radio" id="bad" name="carCondition" value="bad" class="inputEdV">
+              <label for="bad" class="labelRadioEdV">Malo</label>
+            </section>
+          </section>
+
+
+          <section class="sectionKm">
+            <label for="mileage" class="labelKm">Kilometraje</label>
+            <input type="number" id="mileage" name="mileage" required class="inputKm">
+          </section>
+
+          <section class="sectionAño"></section>
+          <label for="year">Año:</label>
+          <input type="number" id="year" name="year" min="1886" max="2099" required>
+
+          <br><!-- Quita después si quieres, solo lo puse para que se vea más ordenado... -->
+
+          <section class="sectionColor">
+            <label for="color">Color:</label>
+            <input type="text" id="color" name="color" required>
+          </section>
+
+
+          <br><!-- Quita después si quieres, solo lo puse para que se vea más ordenado... -->
+
+          <section class="sectionPrecio"></section>
+          <label for="price">Precio:</label>
+          <input type="number" id="price" name="price" step="0.01" min="0" required>
+
+          <br><!-- Quita después si quieres, solo lo puse para que se vea más ordenado... -->
+
+          <section class="sectionMatricula"></section>
+          <label for="licensePlate">Matrícula:</label>
+          <input type="text" id="licensePlate" name="licensePlate" required>
+
+          <br><!-- Quita después si quieres, solo lo puse para que se vea más ordenado... -->
+
+          <section class="sectionAseguradora"></section>
+          <div class="RadioBtn">
+            <label>¿Tiene seguro?</label>
+            <input type="radio" id="yes" name="insurance" value="yes" required>
+            <label for="yes">Sí</label>
+            <input type="radio" id="no" name="insurance" value="no">
+            <label for="no">No</label>
+          </div>
+
+          <br><!-- Quita después si quieres, solo lo puse para que se vea más ordenado... -->
+
+
+          <section class="Comments">
+            <label
+              for="comments">Comentarios:</label><br><!-- Quita después si quieres, solo lo puse para que se vea más ordenado... -->
+            <textarea id="comments" name="comments" rows="4" cols="50" required></textarea>
+          </section>
+
+          <br><!-- Quita después si quieres, solo lo puse para que se vea más ordenado... -->
+
+          <label for="carImages">Subir imágenes del auto:</label>
+          <input type="file" id="carImages" name="carImages" accept="image/*" multiple required>
+
+          <br><!-- Quita después si quieres, solo lo puse para que se vea más ordenado... -->
+
+          <input class="btn" type="submit" value="Enviar">
+        </section>
+      </form>
+  </main>
+
+  <footer class="footer">
+    <p class="DerechosDeAutor">Copyright © 2024 Empresa de Venta de Vehículos</p>
+    <ul class="UL">
+      <li><a href="reembolso.html">Política de reembolso</a></li>
+      <li><a href="Politicas y privacidad.html">Política de privacidad</a></li>
+    </ul>
+  </footer>
 </body>
+
 </html>

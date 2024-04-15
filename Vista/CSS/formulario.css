@@ -9,9 +9,14 @@
     margin: 0;
 }
 
-body
-{
+body {
     background-color: #a0a0a0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /*Primer header*/
@@ -61,8 +66,7 @@ body
     overflow: hidden;
 }
 
-.nav .a
-{
+.nav .a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -86,16 +90,14 @@ body
     transition: all 0.3s;
 }
 
-.Usuario-Container
-{
+.Usuario-Container {
     margin: 0;
     padding: 0;
 
     overflow: hidden;
 }
 
-.Usuario-Container .a
-{
+.Usuario-Container .a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -116,7 +118,7 @@ body
 
     font-size: 17px;
 
-    transition: all 0.3s;   
+    transition: all 0.3s;
 }
 
 .a:hover {
@@ -127,11 +129,10 @@ body
 
 
 /*Formulario*/
-.Clase-FormularioContenedor
-{
+.Clase-FormularioContenedor {
     background: #FFFFFF;
 
-    width: 95%;
+    width: 800px;
     height: auto;
 
     margin: 10px auto;
@@ -143,17 +144,17 @@ body
     overflow: hidden;
 }
 
-.Clase-FormularioContenedor .contexto
-{
+.Clase-FormularioContenedor .contexto {
     color: #000000;
 
     display: flex;
     justify-content: center;
     align-items: center;
+
+    font-size: 35px;
 }
 
-.Clase-Formulario
-{
+.Clase-Formulario {
     width: 90%;
     height: 90%;
 
@@ -163,21 +164,18 @@ body
     margin: 0 auto;
 }
 
-.Clase-Formulario .InputGroup
-{
+.Clase-Formulario .InputGroup {
     width: 100%;
     height: auto;
 
     overflow: hidden;
 }
 
-.InputGroup .Group-1
-{
+.InputGroup .Group-1 {
     overflow: hidden;
 }
 
-.Group-1 .SubGroup-1
-{
+.Group-1 .SubGroup {
     display: flex;
 
     box-sizing: border-box;
@@ -185,14 +183,12 @@ body
     border-radius: 5px;
 
     width: 500px;
-    height: 50px;
+    height: 35px;
 
-    margin: 10px;
-
+    margin: 10px auto;
 }
 
-.Group-1 .label
-{
+.Group-1 .label {
     font-size: 20px;
     width: 100px;
 
@@ -203,8 +199,7 @@ body
     background: #6f7357;
 }
 
-.Group-1 .input
-{
+.Group-1 .input {
     font-size: 20px;
 
     width: 100%;
@@ -216,8 +211,7 @@ body
     background: #FFFFFF;
 }
 
-.Group-1 .SubGroup-2
-{
+.Despegable {
     display: flex;
 
     box-sizing: border-box;
@@ -225,16 +219,120 @@ body
     border-radius: 5px;
 
     width: 500px;
-    height: 50px;
+    height: 35px;
 
-    margin: 10px;
+    margin: 10px auto;
+}
+
+.labelMV {
+    font-size: 20px;
+    width: 250px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #6f7357;
+}
+
+.selectMV {
+    font-size: 20px;
+
+    width: 100%;
+
+    box-sizing: border-box;
+    border: 0px solid;
+    border-radius: 5px;
+
+    text-align: center;
+
+    background: #FFFFFF;
+}
+
+.sectionEdV {
+    box-sizing: border-box;
+    border: 2px solid;
+    border-radius: 5px;
+
+    width: 500px;
+    height: auto;
+
+    margin: 10px auto;
+}
+
+.labelEdV {
+    font-size: 20px;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #6f7357;
+}
+
+.RadioOpciones {
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    height: 45px;
+
+    overflow: hidden;
+}
+
+.labelRadioEdV {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.sectionKm {
+    display: flex;
+
+    box-sizing: border-box;
+    border: 2px solid;
+    border-radius: 5px;
+
+    width: 500px;
+    height: 35px;
+
+    margin: 10px auto;
+}
+
+.labelKm {
+    font-size: 20px;
+    width: 115px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-sizing: border-box;
+
+    background: #6f7357;
+}
+
+.inputKm {
+    font-size: 20px;
+
+    width: 100%;
+
+    box-sizing: border-box;
+    border: 0px solid;
+    border-radius: 5px;
+
+    text-align: end;
+
+    background: #FFFFFF;
 }
 
 
 
 /*Footer*/
-.footer
-{
+.footer {
     width: 100%;
     height: auto;
 
@@ -248,8 +346,7 @@ body
     overflow: hidden;
 }
 
-.DerechosDeAutor
-{
+.DerechosDeAutor {
     margin: 10px 0;
     display: flex;
     justify-content: center;
@@ -257,16 +354,14 @@ body
     color: #FFFFFF;
 }
 
-.UL
-{
+.UL {
     list-style: none;
 
     margin: 0 auto;
     padding: 0;
 }
 
-.UL li
-{
+.UL li {
     display: flex;
     align-items: center;
     height: 30px;
@@ -275,13 +370,11 @@ body
     margin: 5px 0;
 }
 
-.UL a
-{ 
-    color: #FFFFFF; 
-   text-decoration: none;
+.UL a {
+    color: #FFFFFF;
+    text-decoration: none;
 }
 
-.UL a:hover
-{
+.UL a:hover {
     color: #759eff;
 }
