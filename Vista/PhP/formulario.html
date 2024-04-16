@@ -52,8 +52,9 @@
               <label class="label" for="lname">Apellido</label>
               <input class="input" type="text" id="lname" name="lname" required>
             </section>
-
           </section>
+
+          <hr>
 
           <section class="Despegable">
             <label for="carBrand" class="labelMV">Marca de vehículo</label>
@@ -85,58 +86,55 @@
             <input type="number" id="mileage" name="mileage" required class="inputKm">
           </section>
 
-          <section class="sectionAño"></section>
-          <label for="year">Año:</label>
-          <input type="number" id="year" name="year" min="1886" max="2099" required>
-
-          <br><!-- Quita después si quieres, solo lo puse para que se vea más ordenado... -->
+          <section class="sectionYear">
+            <label for="year" class="labelYear">Año</label>
+            <input type="number" id="year" name="year" min="1886" max="2099" required class="inputYear">
+          </section>
 
           <section class="sectionColor">
-            <label for="color">Color:</label>
-            <input type="text" id="color" name="color" required>
+            <label for="color" class="labelColor">Color</label>
+            <input type="text" id="color" name="color" required class="inputColor">
           </section>
 
+          <section class="sectionPrecio">
+            <label for="price" class="labelPrecio">Precio</label>
+            <input type="number" id="price" name="price" step="0.01" min="0" required class="inputPrecio">
+          </section>
 
-          <br><!-- Quita después si quieres, solo lo puse para que se vea más ordenado... -->
+          <section class="sectionMatricula">
+            <label for="licensePlate" class="labelMatricula">Matrícula</label>
+            <input type="text" id="licensePlate" name="licensePlate" required class="inputMatricula">
+          </section>
 
-          <section class="sectionPrecio"></section>
-          <label for="price">Precio:</label>
-          <input type="number" id="price" name="price" step="0.01" min="0" required>
+          <section class="sectionAseguradora">
+            <label class="labelAseguradora1">¿Tiene seguro?</label>
 
-          <br><!-- Quita después si quieres, solo lo puse para que se vea más ordenado... -->
-
-          <section class="sectionMatricula"></section>
-          <label for="licensePlate">Matrícula:</label>
-          <input type="text" id="licensePlate" name="licensePlate" required>
-
-          <br><!-- Quita después si quieres, solo lo puse para que se vea más ordenado... -->
-
-          <section class="sectionAseguradora"></section>
-          <div class="RadioBtn">
-            <label>¿Tiene seguro?</label>
-            <input type="radio" id="yes" name="insurance" value="yes" required>
-            <label for="yes">Sí</label>
-            <input type="radio" id="no" name="insurance" value="no">
-            <label for="no">No</label>
-          </div>
-
-          <br><!-- Quita después si quieres, solo lo puse para que se vea más ordenado... -->
-
+            <section class="RadioBtn">
+              <input type="radio" id="yes" name="insurance" value="yes" required class="inputAseguradora">
+              <label for="yes" class="labelAseguradora2">Sí</label>
+              <input type="radio" id="no" name="insurance" value="no" class="inputAseguradora">
+              <label for="no" class="labelAseguradora2">No</label>
+            </section>
+          </section>
 
           <section class="Comments">
-            <label
-              for="comments">Comentarios:</label><br><!-- Quita después si quieres, solo lo puse para que se vea más ordenado... -->
-            <textarea id="comments" name="comments" rows="4" cols="50" required></textarea>
+            <section class="sectionLabel">
+              <label for="comments" class="labelComentarios">Comentarios</label>
+            </section>
+            <textarea id="comments" name="comments" rows="4" cols="50" required class="textArea"></textarea>
           </section>
 
-          <br><!-- Quita después si quieres, solo lo puse para que se vea más ordenado... -->
+          <section class="sectionSubirIMG">
+            <label for="carImages" class="labelImgV">Subir imágenes del auto</label>
+            <input type="file" id="carImages" name="carImages" accept="image/*" multiple required class="inputImgV">
+          </section>
 
-          <label for="carImages">Subir imágenes del auto:</label>
-          <input type="file" id="carImages" name="carImages" accept="image/*" multiple required>
+          <hr>
 
-          <br><!-- Quita después si quieres, solo lo puse para que se vea más ordenado... -->
+          <section class="sectionEnviar">
+            <input class="inputEnviar" type="submit" value="Enviar">
+          </section>
 
-          <input class="btn" type="submit" value="Enviar">
         </section>
       </form>
   </main>
